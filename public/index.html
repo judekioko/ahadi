@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahadi: concierge test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <h1>Ahadi <small>concierge test</small></h1>
+    <div id="mode" class="mode"></div>
+    <nav>
+      <button class="nav" data-view="score">📊 Scorecard</button>
+      <button class="nav" data-view="nudges">⏰ Send today <span id="nudge-count" class="badge"></span></button>
+    </nav>
+    <h2>Participants</h2>
+    <div id="people"></div>
+    <form id="add-form">
+      <input id="add-name" placeholder="Add participant name" maxlength="60" required>
+      <button>Add</button>
+    </form>
+  </aside>
+  <main id="main"></main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
